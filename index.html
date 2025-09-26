@@ -15,6 +15,10 @@
       font-size: 14pt;
   }
 
+docsify-latex[style*="inline-flex"] {
+    overflow: visible !important;
+}
+
 </style>
 </head>
 <body>
@@ -34,15 +38,72 @@
     themeColor: '#34c3eb',
     name: 'teorver',
     logo: '/_media/logo.svg',
+
+    search: 'auto', // default
+
+    search: [
+      '/',            // => /README.md
+      '/lec1',       // => /guide.md
+    ],
+
+    // complete configuration parameters
+    search: {
+      maxAge: 86400000, // Expiration time, the default one day
+      paths: 'auto', // or 'auto'
+      placeholder: 'Поиск',
+
+      // Localization
+      placeholder: {
+        '/': 'Поиск',
+      },
+
+      noData: 'Ничего не найдено :(',
+
+      // Localization
+      noData: {
+        '/': 'Ничего не найдено :(',
+      },
+
+      // Headline depth, 1 - 6
+      depth: 2,
+
+      hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+
+      // To avoid search index collision
+      // between multiple websites under the same domain
+      namespace: 'teorver',
+
+      // Use different indexes for path prefixes (namespaces).
+      // NOTE: Only works in 'auto' mode.
+      //
+      // When initialiazing an index, we look for the first path from the sidebar.
+      // If it matches the prefix from the list, we switch to the corresponding index.
+    },
   }
 </script>
 
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+ 
   
-<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
 
 <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
+
+
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+<script>
+import Highlight from './Highlight.vue'
+
+export default {
+  components: {
+    Highlight
+  }
+}
+</script>
+
+ <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
 </body>
 </html>
