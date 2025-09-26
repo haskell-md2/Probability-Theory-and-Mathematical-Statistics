@@ -19,6 +19,8 @@ docsify-latex[style*="inline-flex"] {
     overflow: visible !important;
 }
 
+
+
 </style>
 </head>
 <body>
@@ -38,12 +40,13 @@ docsify-latex[style*="inline-flex"] {
     themeColor: '#34c3eb',
     name: 'teorver',
     logo: '/_media/logo.svg',
-
+    notFoundPage: true,
+    
     search: 'auto', // default
 
     search: [
-      '/',            // => /README.md
-      '/lec1',       // => /guide.md
+      '/*',            // => /README.md
+
     ],
 
     // complete configuration parameters
@@ -65,7 +68,7 @@ docsify-latex[style*="inline-flex"] {
       },
 
       // Headline depth, 1 - 6
-      depth: 2,
+      depth: 3,
 
       hideOtherSidebarContent: false, // whether or not to hide other sidebar content
 
