@@ -149,7 +149,7 @@ $$
 
 > Пример 
 
-$A$ - это успех, $\overline{A}$ - неудача. Пусть $\varepsilon = \{ A,\ \overline{A}\}$, тогда $\sigma(\varepsilon) = \{\emptyset,\ A,\ \overline{A},\ \Omega\}$.
+$A$ - успех, $\overline{A}$ - неудача. Пусть $\varepsilon = \{ A,\ \overline{A}\}$, тогда $\sigma(\varepsilon) = \{\emptyset,\ A,\ \overline{A},\ \Omega\}$.
 
 > Определение  
 
@@ -190,7 +190,7 @@ $\pi$-система множеств в $\Omega$ - это система под
 
 > Определение 
 
-$\lambda$-система множеств в $\Omega$ - это система подмножеств $\Omega$ удовлетворяющая свойствам:
+$\lambda$-система множеств в $\Omega$ - это система подмножеств $\Omega$, удовлетворяющая свойствам:
 1. $\Omega \in \lambda $
 2. $A, B  \in \lambda \ \Rightarrow \ B\setminus A \in \lambda$
 3. $A_n \in \lambda, A_n \nearrow A \ \Rightarrow \ A \in \lambda$
@@ -210,8 +210,14 @@ $$
 
 > Замечание 
 
-Эта теорема является теоремой единственности для меры, заданной на $\varepsilon$. То есть если меры совпадают на малом множестве $\varepsilon$, то они совпадут и на минимальной $\sigma$-алгебре, содержащей $\sigma(\varepsilon)$.
+Эта теорема является теоремой единственности для меры, заданной на $\varepsilon$. То есть, если меры совпадают на малом множестве $\varepsilon$, то они совпадут и на $\sigma(\varepsilon)$ - минимальной $\sigma$-алгебре, содержащей $\varepsilon$.
 
 > Замечание
 
-Если же множество $\varepsilon$ окажется алгеброй $\mathcal{A}$, то мы сможем заменить минимальную $\sigma$-алгебру $\sigma(\mathcal{A})$ на монотонный класс $M(\mathcal{A})$
+Если же множество $\varepsilon$ окажется алгеброй $\mathcal{A}$, то мы сможем заменить минимальную $\sigma$-алгебру $\sigma(\mathcal{A})$ на монотонный класс $M(\mathcal{A})$:
+
+$$
+\left. P \right|_{\mathcal{A}} = \left. Q \right|_{\mathcal{A}} 
+\Longrightarrow
+\left. P \right|_{M(\mathcal{A})} = \left. Q \right|_{M(\mathcal{A})}
+$$
