@@ -33,7 +33,7 @@ $$\mathbb{P} (\{\omega_j\} ) = p_j,\ \sum\limits_{j=1}^{n} p_j = 1 $$
 1. $\mathbb{P}$ - $\sigma$-аддитивна
 2. $\mathbb{P}$ - непрерывна сверху: 
     $$A_n \subset A_{n+1}\ \ \& \ \ \bigcup_{n = 1 }^\infty  A_n \in \mathcal{A} \ \Longrightarrow \ \mathbb{P}\left(\bigcup_{n = 1 }^\infty  A_n \right) = \lim\limits_{n\rightarrow \infty } \mathbb{P}(A_n)$$    Заметим, что условие $A_n \subset A_{n+1}$ значит, что последовательность $A_n$ монотонно возрастает: $A_n \nearrow$
-3. $\mathbb{P}$ - непрерывна сверху:
+3. $\mathbb{P}$ - непрерывна снизу:
     $$A_{n+1} \subset A_{n}\ \ \& \ \ \bigcap_{n = 1 }^\infty  A_n \in \mathcal{A} \ \Longrightarrow \ \mathbb{P}\left(\bigcap_{n = 1 }^\infty  A_n \right) = \lim\limits_{n\rightarrow \infty } \mathbb{P}(A_n)$$
     Аналогично, условие $A_{n+1} \subset A_{n}$ значит, что последовательность $A_n$ монотонно убывает: $A_n \searrow$
 4. $\mathbb{P}$ - непрерывна в нуле:
