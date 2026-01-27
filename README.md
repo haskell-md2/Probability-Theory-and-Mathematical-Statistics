@@ -10,3 +10,5 @@
 * Михаил Расторгуев 
 
 Хотите стать автором? Есть предложения по улучшению материала или оформления сайта? Вам сюда: https://t.me/+ZuP0GTiQZi4wYzhi
+
+Ссылка на страницу https://haskell-md2.github.io/Probability-Theory-and-Mathematical-Statistics/
